@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.cellulant.profiler.orm.NwcTransaction" table="nwcTransactions">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="MSISDN" type="java.lang.String">
+            <column name="MSISDN" />
+        </property>
+        <property name="collectorId" type="int">
+            <column name="COLLECTORID" />
+        </property>
+        <property name="businessNumber" type="java.lang.String">
+            <column name="BUSINESSNUMBER" />
+        </property>
+        <property name="recieptNumber" type="java.lang.String">
+            <column name="RECIEPTNUMBER" />
+        </property>
+        <property name="accountNumber" type="int">
+            <column name="ACCOUNTNUMBER" />
+        </property>
+        <property name="amount" type="int">
+            <column name="AMOUNT" />
+        </property>
+        <property name="custFirstName" type="java.lang.String">
+            <column name="CUSTFIRSTNAME" />
+        </property>
+        <property name="custMiddleName" type="java.lang.String">
+            <column name="CUSTMIDDLENAME" />
+        </property>
+        <property name="custLastName" type="java.lang.String">
+            <column name="CUSTLASTNAME" />
+        </property>
+        <property name="currency" type="java.lang.String">
+            <column name="CURRENCY" />
+        </property>
+        <property name="status" type="int">
+            <column name="STATUS" />
+        </property>
+        <property name="collectorDate" type="java.lang.String">
+            <column name="COLLECTORDATE" />
+        </property>
+        <property name="dateCreated" type="java.util.Date">
+            <column name="DATECREATED" />
+        </property>
+        <property name="insertedBy" type="int">
+            <column name="INSERTEDBY" />
+        </property>
+        <property name="dateModified" type="java.lang.String">
+            <column name="DATEMODIFIED" />
+        </property>
+        <property name="updatedby" type="int">
+            <column name="UPDATEDBY" />
+        </property>
+        <property name="billFile" type="java.lang.String">
+            <column name="BILLFILE" />
+        </property>
+        <property name="pushcompletionTime" type="java.lang.String">
+            <column name="PUSHCOMPLETIONTIME" />
+        </property>
+        <property name="IPNID" type="java.lang.String">
+            <column name="IPNID" />
+        </property>
+        <property name="ORIG" type="java.lang.String">
+            <column name="ORIG" />
+        </property>
+        <property name="mpesaTrxTime" type="java.lang.String">
+            <column name="MPESATRXTIME" />
+        </property>
+        <property name="Tstamp" type="java.lang.String">
+            <column name="TSTAMP" />
+        </property>
+        <property name="merchartcode" type="java.lang.String">
+            <column name="MERCHARTCODE" />
+        </property>
+        <property name="resultData" type="java.lang.String">
+            <column name="RESULTDATA" />
+        </property>
+        <property name="beepTransactionId" type="int">
+            <column name="BEEPTRANSACTIONID" />
+        </property>
+        <property name="processed" type="int">
+            <column name="PROCESSED" />
+        </property>
+        <property name="numberofsends" type="int">
+            <column name="NUMBEROFSENDS" />
+        </property>
+        <property name="beepstatus" type="int">
+            <column name="BEEPSTATUS" />
+        </property>
+        <property name="bucketid" type="int">
+            <column name="BUCKETID" />
+        </property>
+        <property name="nextsend" type="java.lang.String">
+            <column name="NEXTSEND" />
+        </property>
+        <property name="entrymode" type="java.lang.String">
+            <column name="ENTRYMODE" />
+        </property>
+        <property name="analysisstatus" type="int">
+            <column name="ANALYSISSTATUS" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.cellulant.profiler.orm.ProfileAccounts" table="accountsRecords">
+        <id name="profileAccountID" type="long">
+            <column name="profileAccountId" />
+            <generator class="increment" />
+        </id>
+        <property name="accountNummber" type="java.lang.String">
+            <column name="accountNumber" />
+        </property>
+        <many-to-one name="profile" class="com.cellulant.profiler.orm.Profile" fetch="join">
+            <column name="profileId" />
+        </many-to-one>
+            <property name="Amount" type="int">
+            <column name="amount" />
+        </property>
+        <property name="paymentDate" type="java.util.Date">
+            <column name="paymentdate" />
+        </property>
+        <property name="DateModified" type="java.util.Date">
+            <column name="datemodified" />
+        </property>
+    </class>
+</hibernate-mapping>

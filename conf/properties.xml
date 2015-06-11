@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>Properties for connecting to the DATABASE</comment>
+    <entry key="INFO_LOG_LEVEL">INFO</entry>
+    <entry key="ERROR_LOG_LEVEL">ERROR</entry>
+    <entry key="INFO_LOG_FILE">/apps/logs/daemons/CustomerRegInfo.log</entry>
+    <entry key="ERROR_LOG_FILE">/apps/logs/daemons/CustomerRegError.log</entry>
+    <entry key="DB_POOL_NAME">REG_POOL</entry>
+    <entry key="DB_USER_NAME">root</entry>
+    <entry key="DB_PASSWORD">root</entry>
+    <entry key="DB_HOST">127.0.0.1</entry>
+    <entry key="DB_PORT">3306</entry>
+    <entry key="DB_NAME">wallet_development</entry>
+    <entry key="ISO_PORT_NO">23998</entry>
+    <entry key="GE_EXCEPTION">03</entry>
+
+    <entry key="REG_URL">http://localhost/wallet1/IS_APIs/CustomerRegistration/register</entry>                                         
+    <entry key="ACADD_URL">http://localhost/wallet1/IS_APIs/CustomerRegistration/attachAccount</entry>
+    <entry key="ACDEL_URL">http://192.168.254.60:8130/IS_APIs/CustomerRegistration/removeAccount</entry>
+    <entry key="DEL_URL">http://192.168.254.60:8130/IS_APIs/CustomerRegistration/removeCustomer</entry>
+	<entry key="ADD_MSISDN_URL">http://localhost/wallet1/IS_APIs/CustomerRegistration/attachProfile</entry>
+	<entry key="REMOVE_MSISDN_URL">http://192.168.254.60:8130/IS_APIs/CustomerRegistration/removeProfile</entry>
+	<entry key="ADD_NOMINATON_URL">http://localhost/wallet1/IS_APIs/CustomerRegistration/attachNomination</entry>
+	<entry key="ADD_BENEFICIARY_URL">http://localhost/wallet1/IS_APIs/CustomerRegistration/attachEnrollment</entry>
+    <entry key="REG_USER">system-user</entry>
+    <entry key="REG_PASSWORD">lipuka</entry>
+    <entry key="NODE_SYSTEM">1</entry>
+    <entry key="TARRIF_ID">1</entry>
+    <entry key="SUCCESS_CODE">00</entry>
+	<entry key="POOL_SIZE">10</entry>
+	<entry key="MAX_POOL_SIZE">100</entry>
+    <entry key="SLEEP_TIME">10000</entry>
+</properties>

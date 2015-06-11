@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.cellulant.profiler.orm.Profile" table="profileRecords">
+        <id name="profileId" type="long">
+            <column name="profileId" />
+            <generator class="increment" />
+        </id>
+        <many-to-one name="customer" class="com.cellulant.profiler.orm.Customer" fetch="join">
+            <column name="customerId" />
+        </many-to-one>
+        <property name="MSISDN" type="java.lang.String">
+            <column name="MSISDN" />
+        </property>
+        <property name="dateCreated" type="java.util.Date">
+            <column name="dateCreated" />
+        </property>
+        <property name="dateModified" type="java.util.Date">
+            <column name="datemodified" />
+        </property>
+    </class>
+</hibernate-mapping>
